@@ -228,7 +228,13 @@ footer nav a:hover { color: var(--mustard); }
   transition: background .15s;
 }
 .product a.buy:hover { background: var(--mustard); }
-
+.prose table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+.prose table th, .prose table td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+.prose table th { background: var(--paper-card); font-family: 'Space Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink); }
+.prose table td.yes { color: var(--denim-dark); font-weight: 600; }
+.prose .toc-list { list-style: decimal; padding-left: 1.4em; }
+.prose .toc-list a { color: var(--denim-dark); }
+.prose h3 { font-size: 19px; margin-top: 1.6em; }
 @media (max-width: 780px) {
   .hero .container { grid-template-columns: 1fr; }
   .hero .art { order: -1; max-width: 280px; margin: 0 auto; }
