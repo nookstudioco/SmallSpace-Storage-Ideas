@@ -248,7 +248,7 @@ footer nav a:hover { color: var(--mustard); }
 
 /* prose pages: about / privacy / articles */
 .prose { padding: 56px 0 80px; }
-.prose .container { max-width: 720px; }
+.prose .container { max-width: 840px; }
 .prose h1 { font-size: 40px; font-style: italic; margin-bottom: 0.3em; }
 .prose h2 { font-size: 26px; margin-top: 2em; }
 .prose p, .prose li { color: var(--ink-soft); font-size: 17px; }
@@ -392,6 +392,13 @@ footer nav a:hover { color: var(--mustard); }
 
 .zone { margin: 48px 0; padding-top: 8px; border-top: 1px solid var(--line); }
 .zone h2 { font-size: 26px; margin-top: 0.4em; }
+@media (min-width: 900px) {
+  .zone {
+    max-width: 1000px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 .product-grid {
   display: grid;
