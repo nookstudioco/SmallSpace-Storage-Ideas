@@ -9,17 +9,25 @@
   z-index: 1000;
   transition: width 0.1s ease-out;
 }
+   /* Scroll reveal cho zone + product card */
+   .reveal {
+     opacity: 0;
+     transition: opacity 0.5s ease;
+   }
+   .reveal.is-visible {
+     opacity: 1;
+   }
 
-/* Scroll reveal cho zone + product card */
-.reveal {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+   /* Riêng product-card mới trượt nhẹ — zone thì chỉ mờ dần thôi,
+      vì zone cần giữ nguyên transform gốc để không vỡ layout */
+   .product-card.reveal {
+     transform: translateY(16px);
+     transition: opacity 0.5s ease, transform 0.5s ease;
+   }
+   .product-card.reveal.is-visible {
+     transform: translateY(0);
+   }
+
 
 /* Quick-nav highlight mục đang xem */
 .quick-nav a.active {
